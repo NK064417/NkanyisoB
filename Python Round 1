@@ -1,0 +1,114 @@
+Python Round 1
+Question 1
+
+import datetime
+def is_date_format_correct(date:str)->bool:
+    """
+    This function takes in a date in string format
+    and returns true if the date matches the format
+    YYYY-MM-DD and false if it doesn't
+    """
+    #your code here#
+date = str(input('Please enter the date in this format:YYYY-MM-DD '))
+# input date
+date_string = date
+
+# giving the date format
+date_format = '%Y-%m-%d'
+correctDate = None
+try:
+    dateObject = datetime.datetime.strptime(date_string, date_format)
+    correctDate = True
+except ValueError:
+    correctDate = False
+print(str(correctDate))
+
+Question 2
+for i in range(1, 11):
+    skip = False
+    if i==6:
+        #your code here#
+        skip = True
+        continue
+    else:
+        print(i, end=',')
+        
+        
+   Question 3
+   start = datetime.datetime.strptime("27-11-2022", "%d-%m-%Y")
+   end = datetime.datetime.strptime("01-12-2022", "%d-%m-%Y")
+   date_generated = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
+
+for date in date_generated:
+    # giving the date format
+    date_format = '%Y-%m-%d'
+    print('stored date \n :', date.strftime("%d-%m-%Y") ,':',date.strftime("%Y-nov-%d"))
+    
+Question 4
+
+def main():
+    qty = None
+    cost = None
+
+def fetch_quantity():
+    try:
+        """
+        Returns a number, any number
+        """
+        ...
+    except:
+      print(exception)
+    
+    return ...
+    
+def fetch_cost():
+    try:
+        """
+        Returns a number, any number
+        """
+        ...
+    except:
+      print("An exception occurred")
+      pass
+    return ...
+    
+def compute_cost_per_quantity():
+
+    qty = fetch_quantity()
+    cost = fetch_cost()
+    cost_per_quantity = cost/qty
+    return cost_per_quantity
+    
+    try:
+        cost_per_quantity = compute_cost_per_quantity()
+        a = 1 + 2 + cost_per_quantity
+        b = 4 + 5
+        print(a+b)
+    except:
+        print("An exception occurred")
+        
+Question 5
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+@api_view(['GET'])
+def get_params():
+    resp = request.get('http://127.0.0.1:8000/get_params?name=John&surname=Doe')
+    print(resp)
+    
+    content = {
+    }
+    return Response(content, status=status.HTTP_200_OK)
+    
+ Question 6
+ class TestMath:
+    x=10
+    y=10
+    def test_add(x,y):
+        return x + y
+    
+    def test_subtract(x,y):
+        return x - y
+    
+    def test_milutiply(x,y):
+        return x * y
