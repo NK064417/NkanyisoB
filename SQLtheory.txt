@@ -1,0 +1,31 @@
+1. - (INNER) JOIN : Returns records that have matching values in both tables.
+   - LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table.
+   -RIGHT (OUTER) JOIN : Returns all records from the right table, and the matched records from the left table.
+
+2. -A null means that there is no value for the record
+   -A blank means that there is a value for a given record and the value is space
+   -0 means numeric value
+
+3. -WHERE-clause cannot contain aggregate functions
+   -HAVING-clause cannot contain aggregate functions
+
+4. -we sort data BY ORDER
+
+5. -Tables are the basic data storage objects in a database
+   - Views are virtual tables, pre-canned SELECTs
+   -Stored procedures are programming objects returning a SELECT like result set and optionally output parameters
+
+6. -Using cursor you can easily iterate through records individually
+
+7. -Decimal is DECIMAL
+   -Whole number is INT
+
+8. -A stored procedure is a prepared SQL code that you can save, so the code can be reused
+
+9. -Auto Increment is a field used to generate a unique number for every new record added into a table
+
+10. -The unique records are select when we use the distinct keyword.
+
+11. -We use square brackets
+
+12. -The LIKE operator
