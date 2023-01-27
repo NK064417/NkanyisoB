@@ -83,6 +83,6 @@ data3={
 }
 
 
-print(data1)
+print(data,data1,data2,data3)
 df = pd.DataFrame(data)
 print(df)
