@@ -1,0 +1,88 @@
+import pandas as pd #dependency
+import numpy as np #dependency
+
+df_teacher = pd.DataFrame({
+"name": ["Pep Guardiola", "Jurgen Klopp", "Mikel Arteta", "Zinadine Zidane"],
+"married": [True, True, False, True],
+"school": ["Manchester High School", "Liverpool High School", "Arsenal High", np.nan]
+})
+
+df_student = pd.DataFrame({
+    "teacher": ["Mikel Arteta", "Mikel Arteta", "Pep Guardiola", "Jurgen Klopp", "Jurgen Klopp", "Jurgen Klopp", "Pep Guardiola","Pep Guardiola","Mikel Arteta"],
+    "name": ["Bukayo Saka", "Gabriel Martinelli", "Jack Grealish", "Roberto Firmino",
+"Andrew Robertson", "Darwin Nunez", "Ederson Moraes", "Manuel Akanji", "Thomas Partey"],
+"age": [21, 21, 27, 31, 28, 23, 29, 27, 29],
+"height": ['2.1m','2.1m', '2.1m', '2.1m', '2.1m', '2.1m', '2.1m', '2.1m', '2.1m']
+})
+print(df_teacher, '\n')
+print(df_student, '\n')
+
+data = {
+  "teacher": ["Pep Guardiola"],
+  "school": ["Manchester High School"],
+  "married": 'true',
+  "Student":{"Jack Grealish"
+      "age" : 27,
+      "hieght": '2.1m',
+      "weight": '69kg'
+  },
+  "Student":{"Ederson Moraes"
+     "age" : 29,
+     "hieght": '2.1m'
+  },
+   "Student":{"Manuel Akanji"
+     "age" : 27,
+     "hieght": '2.1m',
+     "weight": '69kg'
+  }
+},
+data1={
+  "teacher": ["Jurgen Klopp"],
+  "school": ["Liverpool High School"],
+  "married": 'true',
+  "Student":{"Roberto Firmino"
+      "age" : 31,
+      "hieght": '2.1m',
+      "weight": '73kg'
+  },
+  "Student":{"Andrew Robertson"
+      "age" : 28,
+      "hieght": '2.1m',
+      "weight": '60kg'
+  },
+  "Student":{" Darwin Nunez"
+      "age" : 23,
+      "hieght": '2.1m',
+      "weight": '70kg'
+  },
+}
+data2={
+  "teacher": ["Mikel Arteta"],
+  "school": ["Arsenal High"],
+  "married": 'false',
+  "Student":{" Bukayo Saka"
+      "age" : 21,
+      "hieght": '2.1m',
+      "weight": '80kg'
+      },
+  "Student":{"Gabriel Martinelli"
+      "age" : 21,
+      "hieght": '2.1m',
+      "weight": '70kg'
+      },
+   "Student":{"Thomas Partey"
+      "age" : 21,
+      "hieght": '2.1m',
+      "weight": '74kg'
+      },
+}
+data3={
+  "teacher": ["Zinadine Zidane"],
+  "school": np.nan,
+  "married": 'true'
+}
+
+
+print(data1)
+df = pd.DataFrame(data)
+print(df)
